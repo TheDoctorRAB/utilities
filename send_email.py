@@ -23,7 +23,7 @@ script,email_list=argv #add a CSV file with email addresses (one on each line) a
 #
 # email sender
 #
-sender='r.angelo.borrelli@gmail.com'
+sender='gmail'
 #
 #######
 #
@@ -50,7 +50,7 @@ for line in email_list:
 #
 server=smtplib.SMTP('smtp.gmail.com',587)
 server.starttls()
-server.login(sender,'hrgntcsdnwchgvsk')
+server.login(sender,'key')
 #
 #######
 #
