@@ -17,6 +17,10 @@ import numpy
 from sys import argv
 from email.MIMEMultipart import MIMEMultipart
 from email.MIMEText import MIMEText
+from email.MIMEImage import MIMEImage
+from email.mime.application import MIMEApplication
+from email.MIMEBase import MIMEBase
+from email import Encoders
 script,email_list=argv #add a CSV file with email addresses (one on each line) as command line argument
 #
 ########################################################################
@@ -59,23 +63,31 @@ server.login(sender,'hrgntcsdnwchgvsk')
 for j in range(0,email_list_size): #been getting a 'connection unexpectedly closed' error around j=100 
     receiver=email_list[j]
     message=MIMEMultipart()
-    message['From']=sender
+    message['From']='Bob Borrelli'
     message['To']=receiver
-    message['Subject']='ANS student section revival'
+    message['Subject']='NE450 coming soon'
     body='''
-Good afternoon,
+Hi Everyone,
 
-I'm a *brand* new faculty member in the nuclear engineering program. I'm interested in reviving the American Nuclear Society (ANS) student branch here at UI. I recently was at the nation ANS conference in Washington, D.C. There was no student representation of UI at all. There was plenty of UC-Berkeley, Wisconsin, Penn State, and Texas A&M, and all those students know each other. When they graduate and are looking for jobs and research collaborators, they're going to remember their own friends and colleagues that they met at conferences like this. Clearly, developing a UI presence at these conferences is highly beneficial and valuable. Additionally, there is a student ANS conference in Madison, Wisonsin at the end of March. Any student can still submit a paper to present there as well. 
+I'm emailing you because you're on the list for NE450 for this fall semester. Apparently, it is starting next week. I keep all the course materials online, and we can communicate about the class through piazza.com (free). 
 
-At the ANS conference, I spoke with the Executive Committee of the student branches about my interest in reviving our group. There is some work to do, but it is not overwhelming. First, I'd like to complile a list of students who are interested in actively participating in a student branch. Once I do that, we can get together for a meeting a discuss the next steps. Please reply if you are interested, and if you have any other questions.
+Please sign up for the class on piazza with the following link:
+
+piazza.com/uidaho/fall2016/ne450/home
+
+We will talk about piazza on the first day of class, but feel free to poke around in the meantime. 
+
+You can also visit me in CAES if you want to discuss anything about the course.
 
 Regards,
-Bob Borrelli
-
-PS
-I use my gmail account because it is far easier and more flexible in terms of scripting. 
-I am located in CAES if anyone wants to meet me to say hi.
-'''
+Bob
+'''    
+#    part=MIMEApplication(open('annual_meeting.pdf','rb').read())
+#    part2=MIMEApplication(open('cleanup.flyer.pdf','rb').read())
+#    part.add_header('Content-Disposition','attachment',filename='annual_meeting.pdf')
+#    part2.add_header('Content-Disposition','attachment',filename='cleanup.flyer.pdf')
+#    message.attach(part)
+#    message.attach(part2)
     message.attach(MIMEText(body,'plain'))
     message_text=message.as_string()
 #
