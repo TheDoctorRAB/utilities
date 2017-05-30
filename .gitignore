@@ -64,4 +64,4 @@ target/
 *.md~
 .gitignore~
 *.png
-email.csv
+*email.csv
