@@ -28,7 +28,7 @@ script,email_list=argv #add a CSV file with email addresses (one on each line) a
 #
 # email sender
 #
-sender='gmail'
+sender='gmail' #your gmail address
 #
 #######
 #
