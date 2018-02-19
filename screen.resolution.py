@@ -12,9 +12,7 @@
 # imports
 #
 import Tkinter
-import ctypes
 root=Tkinter.Tk()
-user32=ctypes.windll.user32
 #
 ########################################################################
 #
@@ -24,15 +22,15 @@ user32=ctypes.windll.user32
 #
 # pixels
 #
-width_px=root.winfo_screenwidth()
-height_px=root.winfo_screenheight() 
+width=root.winfo_screenwidth()
+height=root.winfo_screenheight()
 #
 #######
 #
 # mm
 #
 width_mm=root.winfo_screenmmwidth()
-height_mm=root.winfo_screenmmheight() 
+height_mm=root.winfo_screenmmheight()
 #
 #######
 #
@@ -45,26 +43,28 @@ height_in=height_mm/25.4
 #
 # dpi
 #
-width_dpi=width_px/width_in
-height_dpi=height_px/height_in
+width_dpi=width/width_in
+height_dpi=height/height_in
 #
+dpi_values=(96,120,144,168,192)
+current_dpi=width_dpi
+minimum=1000
 #
-# get system metrics
-#
-user32.SetProcessDPIAware()
-[width,height] = [user32.GetSystemMetrics(0),user32.GetSystemMetrics(1)]
-current_dpi = width*96/width_px
+for dval in dpi_values:
+  difference=abs(dval-width_dpi)
+  if difference<minimum:
+    minimum=difference
+    current_dpi=dval
 #
 #######
 #
 # output
 #
-print('width: %i px, height: %i px'%(width_px,height_px))
+print('width: %i px, height: %i px'%(width,height))
 print('width: %i mm, height: %i mm'%(width_mm,height_mm))
 print('width: %0.f in, height: %0.f in'%(width_in,height_in))
 print('width: %0.f dpi, height: %0.f dpi'%(width_dpi,height_dpi))
-print('size is %0.f %0.f'%(width,height))
-print('current DPI is %0.f' % (current_dpi))    
+print('current DPI is %0.f' % (current_dpi))
 #
 #
 #

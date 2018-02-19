@@ -17,10 +17,10 @@ def PDFmerge(pdfs, output):
 
 def main():
     # pdf files to merge
-    pdfs = ['1.pdf', '2.pdf']
+    pdfs = ['2018 CFA ENV UI 18-15211.pdf', '2018 CFA ENV PU 18-15211.pdf']
 
     # output pdf file name
-    output  = 'combined_example.pdf'
+    output  = '2018 CFA ENV 18-15211.pdf'
 
     # calling pdf merge function
     PDFmerge(pdfs = pdfs, output = output)

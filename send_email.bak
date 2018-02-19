@@ -1,5 +1,4 @@
-#! /usr/bin/env python
-# -*- coding: utf-8 -*-
+########################################################################
 # R.A.Borrelli
 # @TheDoctorRAB
 # rev.19.November.2015
@@ -28,7 +27,7 @@ script,email_list=argv #add a CSV file with email addresses (one on each line) a
 #
 # email sender
 #
-sender='gmail' #your gmail address
+sender=''
 #
 #######
 #
@@ -51,30 +50,29 @@ for line in email_list:
 #
 #######
 #
-# SMTP client session start
+# SMTP client session start 
 #
 server=smtplib.SMTP('smtp.gmail.com',587)
 server.starttls()
-server.login(sender,'get encrypted passwd from gmail')
+server.login(sender,'')
 #
 #######
 #
 # send the email
 #
-for j in range(0,email_list_size): #been getting a 'connection unexpectedly closed' error around j=100
+for j in range(0,email_list_size): #been getting a 'connection unexpectedly closed' error around j=100 
     receiver=email_list[j]
     message=MIMEMultipart()
-    message['From']='Name'
+    message['From']=''
     message['To']=receiver
-    message['Subject']='Title'
+    message['Subject']='' 
     body='''
-Message
-'''
-#    part=MIMEApplication(open('filename','rb').read())
-#    part2=MIMEApplication(open('filename','rb').read())
-#    part.add_header('Content-Disposition','attachment',filename='filename')
-#    part2.add_header('Content-Disposition','attachment',filename='filename')
-#    message.attach(part)
+'''    
+    part=MIMEApplication(open('','rb').read())
+#    part2=MIMEApplication(open('','rb').read())
+    part.add_header('Content-Disposition','attachment',filename='')
+#    part2.add_header('Content-Disposition','attachment',filename='')
+    message.attach(part)
 #    message.attach(part2)
     message.attach(MIMEText(body,'plain'))
     message_text=message.as_string()
