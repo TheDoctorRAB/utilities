@@ -65,3 +65,4 @@ target/
 .gitignore~
 *.png
 *email.csv
+*.pdf
