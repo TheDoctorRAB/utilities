@@ -10,6 +10,9 @@ fi
 
 source /usr/share/git-core/contrib/completion/git-prompt.sh
 
+export GIT_PS1_SHOWDIRTYSTATE=true
+export GIT_PS1_SHOWUNTRACKEDFILES=true
+
 PS1='[\d \A \w$(declare -F __git_ps1 &>/dev/null && __git_ps1 " (%s)") ]$ '
 
 # User specific aliases and functions
