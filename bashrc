@@ -1,0 +1,18 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+source /usr/share/git-core/contrib/completion/git-prompt.sh
+
+PS1='[\d \A \w$(declare -F __git_ps1 &>/dev/null && __git_ps1 " (%s)") ]$ '
+
+# User specific aliases and functions
+alias ll='ls -Flag'
+alias rm='rm -i'
+alias mv='mv -i'
