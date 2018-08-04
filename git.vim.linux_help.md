@@ -28,7 +28,8 @@ $ git checkout other-branch -- ../path/ #while on destination branch
 
 ### new password
 $ git push https://username@github.com/username/repo.git master  
-May be that the push has to be to master
+May be that the push has to be to master  
+Deleted directory and cloned again
 
 http://dont-be-afraid-to-commit.readthedocs.io/en/latest/git/commandlinegit.html  
 
