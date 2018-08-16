@@ -34,6 +34,8 @@ Make sure to git status and push up anything new
 
 http://dont-be-afraid-to-commit.readthedocs.io/en/latest/git/commandlinegit.html  
 
+https://blacksaildivision.com/git-latest-version-centos
+
 # linux
 delete matching files in subdirectories  
 $ find . -name \*.out -type f -delete
@@ -44,10 +46,10 @@ $ find . -name "*.inp" -exec vim {} +
 copy one file to multiple directories
 $ echo 75wt/10wt/30cm/inp/ 75wt/30wt/30cm/inp/ 75wt/50wt/30cm/inp/ 75wt/70wt/30cm/inp/ 75wt/90wt/30cm/inp/ | xargs -n 1 cp ../submaster-inp/30cm/single.assembly_7815.inp
 
+
 # vim
 multiple find and replace  
 %s/103    5 -0.001205/103    7 -0.0001785/ | %s/110    5 -0.001205/110    7 -0.0001785/ | %s/NPS    500000/NPS    200000/
 
 global find and replace with confirmation  
 %s/find this string/replace with this string/gc
-
