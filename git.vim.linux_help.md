@@ -37,6 +37,7 @@ http://dont-be-afraid-to-commit.readthedocs.io/en/latest/git/commandlinegit.html
 https://blacksaildivision.com/git-latest-version-centos
 
 # linux
+
 delete matching files in subdirectories  
 $ find . -name \*.out -type f -delete
 
