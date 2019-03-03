@@ -59,3 +59,5 @@ multiple find and replace
 
 global find and replace with confirmation  
 %s/find this string/replace with this string/gc
+
+https://github.com/Valloric/YouCompleteMe/wiki/Building-Vim-from-source
