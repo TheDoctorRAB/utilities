@@ -1,4 +1,5 @@
 # git
+
 make branch first  
 only make branch from master  
 $ git checkout -b new_branch master  
@@ -27,6 +28,7 @@ $ git diff --stat upstream/master
 $ git checkout other-branch -- ../path/ #while on destination branch  
 
 ### new password
+
 $ git push https://username@github.com/username/repo.git master  
 May be that the push has to be to master  
 Deleted directory and cloned again  
@@ -37,6 +39,7 @@ http://dont-be-afraid-to-commit.readthedocs.io/en/latest/git/commandlinegit.html
 https://blacksaildivision.com/git-latest-version-centos
 
 # linux
+
 
 delete matching files in subdirectories  
 $ find . -name \*.out -type f -delete
@@ -49,8 +52,17 @@ $ echo 75wt/10wt/30cm/inp/ 75wt/30wt/30cm/inp/ 75wt/50wt/30cm/inp/ 75wt/70wt/30c
 
 
 # vim
+
 multiple find and replace  
 %s/103    5 -0.001205/103    7 -0.0001785/ | %s/110    5 -0.001205/110    7 -0.0001785/ | %s/NPS    500000/NPS    200000/
 
 global find and replace with confirmation  
 %s/find this string/replace with this string/gc
+
+# latex
+
+install sty
+$sudo yum -y install 'tex(multirow.sty)'
+
+# hpc mcnp
+sub_mcnpx_2.7.0 -i single.assembly_7815.inp -w 02:15:00 -n16 -P iuc
