@@ -50,6 +50,11 @@ $ find . -name "*.inp" -exec vim {} +
 copy one file to multiple directories
 $ echo 75wt/10wt/30cm/inp/ 75wt/30wt/30cm/inp/ 75wt/50wt/30cm/inp/ 75wt/70wt/30cm/inp/ 75wt/90wt/30cm/inp/ | xargs -n 1 cp ../submaster-inp/30cm/single.assembly_7815.inp
 
+<<<<<<< HEAD
+mount shared folder 'home'
+sudo mount -t vboxsf -o uid=$UID,gid=$(id -g) home ~/home/
+=======
+>>>>>>> ee2cbaa7446c00fa27fd9ba53254f5e2ce4e7000
 
 # vim
 
@@ -59,6 +64,7 @@ multiple find and replace
 global find and replace with confirmation  
 %s/find this string/replace with this string/gc
 
+<<<<<<< HEAD
 # latex
 
 install sty
@@ -66,3 +72,9 @@ $sudo yum -y install 'tex(multirow.sty)'
 
 # hpc mcnp
 sub_mcnpx_2.7.0 -i single.assembly_7815.inp -w 02:15:00 -n16 -P iuc
+=======
+https://github.com/Valloric/YouCompleteMe/wiki/Building-Vim-from-source
+make distclean
+rm auto/config.cache
+
+>>>>>>> b13607c9a6664d45d9fa5a6e5ace412d8d1514e3

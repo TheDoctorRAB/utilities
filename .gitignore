@@ -65,5 +65,6 @@ target/
 .gitignore~
 *.png
 *email.csv
+*.csv
 *.pdf
 send_email.py

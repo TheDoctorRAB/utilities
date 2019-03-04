@@ -1,0 +1,29 @@
+set runtimepath+=~/.vim_runtime
+
+source ~/.vim_runtime/vimrcs/basic.vim
+source ~/.vim_runtime/vimrcs/filetypes.vim
+source ~/.vim_runtime/vimrcs/plugins_config.vim
+source ~/.vim_runtime/vimrcs/extended.vim
+source ~/.vim_runtime/my_plugins/AutoSave.vim
+source ~/.vim_runtime/my_plugins/latexlivepreview.vim
+
+try
+source ~/.vim_runtime/my_configs.vim
+catch
+endtry
+
+set number
+let g:auto_save = 1
+let g:auto_save_in_insert_mode = 1
+set statusline=%!getcwd()
+
+filetype plugin on
+let g:tex_flavor='latex'
+
+let g:livepreview_previewer='okular'
+let g:livepreview_engine='pdflatex'
+
+let g:Tex_FormatDependency_pdf='dvi,ps,pdf'
+let g:Tex_CompileRule_dvi = 'latex --interaction=nonstopmode $*'
+let g:Tex_CompileRule_ps = 'dvips -Ppdf -o $*.ps $*.dvi'
+let g:Tex_CompileRule_pdf = 'ps2pdf $*.ps'
