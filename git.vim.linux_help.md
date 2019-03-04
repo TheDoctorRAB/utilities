@@ -61,3 +61,6 @@ global find and replace with confirmation
 %s/find this string/replace with this string/gc
 
 https://github.com/Valloric/YouCompleteMe/wiki/Building-Vim-from-source
+make distclean
+rm auto/config.cache
+
