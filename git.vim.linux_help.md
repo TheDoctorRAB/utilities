@@ -70,6 +70,13 @@ global find and replace with confirmation
 install sty
 $sudo yum -y install 'tex(multirow.sty)'
 
+word count
+pdftotext file.pdf - | wc -w 
+counts page numbers though
+
+spell check
+aspell --lang=en --mode=tex -c file.tex
+
 # hpc mcnp
 sub_mcnpx_2.7.0 -i single.assembly_7815.inp -w 02:15:00 -n16 -P iuc
 =======
