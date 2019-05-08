@@ -65,6 +65,10 @@ global find and replace with confirmation
 %s/find this string/replace with this string/gc
 
 <<<<<<< HEAD
+
+reinstall  
+https://github.com/Valloric/YouCompleteMe/wiki/Building-Vim-from-source
+
 # latex
 
 install sty
