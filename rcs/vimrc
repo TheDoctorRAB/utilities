@@ -34,3 +34,5 @@ let g:Tex_CompileRule_pdf = 'ps2pdf $*.ps'
 set statusline=
 set statusline+=%{FugitiveStatusline()}
 set statusline+=\ %f
+
+colorscheme gruvbox

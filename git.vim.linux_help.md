@@ -81,6 +81,8 @@ counts page numbers though
 spell check
 aspell --lang=en --mode=tex -c file.tex
 
+sudo yum -y install texlive texlive-*.noarch
+
 # hpc mcnp
 sub_mcnpx_2.7.0 -i single.assembly_7815.inp -w 02:15:00 -n16 -P iuc
 =======
