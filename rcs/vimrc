@@ -36,3 +36,6 @@ set statusline+=%{FugitiveStatusline()}
 set statusline+=\ %f
 
 colorscheme gruvbox
+
+set cursorline
+set cursorcolumn
