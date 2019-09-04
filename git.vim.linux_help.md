@@ -38,6 +38,8 @@ http://dont-be-afraid-to-commit.readthedocs.io/en/latest/git/commandlinegit.html
 
 https://blacksaildivision.com/git-latest-version-centos
 
+https://computingforgeeks.com/how-to-install-latest-version-of-git-git-2-x-on-centos-7/
+https://serverfault.com/questions/709433/install-a-newer-version-of-git-on-centos-7
 # linux
 
 
@@ -91,3 +93,5 @@ make distclean
 rm auto/config.cache
 
 >>>>>>> b13607c9a6664d45d9fa5a6e5ace412d8d1514e3
+
+
