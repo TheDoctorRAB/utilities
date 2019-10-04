@@ -82,6 +82,7 @@ counts page numbers though
 
 spell check
 aspell --lang=en --mode=tex -c file.tex
+sudo yum install aspell-en
 
 sudo yum -y install texlive texlive-*.noarch
 
