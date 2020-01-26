@@ -40,8 +40,8 @@ https://blacksaildivision.com/git-latest-version-centos
 
 https://computingforgeeks.com/how-to-install-latest-version-of-git-git-2-x-on-centos-7/
 https://serverfault.com/questions/709433/install-a-newer-version-of-git-on-centos-7
-# linux
 
+# linux
 
 delete matching files in subdirectories  
 $ find . -name \*.out -type f -delete
@@ -52,11 +52,8 @@ $ find . -name "*.inp" -exec vim {} +
 copy one file to multiple directories
 $ echo 75wt/10wt/30cm/inp/ 75wt/30wt/30cm/inp/ 75wt/50wt/30cm/inp/ 75wt/70wt/30cm/inp/ 75wt/90wt/30cm/inp/ | xargs -n 1 cp ../submaster-inp/30cm/single.assembly_7815.inp
 
-<<<<<<< HEAD
 mount shared folder 'home'
 sudo mount -t vboxsf -o uid=$UID,gid=$(id -g) home ~/home/
-=======
->>>>>>> ee2cbaa7446c00fa27fd9ba53254f5e2ce4e7000
 
 # vim
 
@@ -66,10 +63,10 @@ multiple find and replace
 global find and replace with confirmation  
 %s/find this string/replace with this string/gc
 
-<<<<<<< HEAD
-
 reinstall  
 https://github.com/Valloric/YouCompleteMe/wiki/Building-Vim-from-source
+make distclean
+rm auto/config.cache
 
 # latex
 
@@ -86,13 +83,12 @@ sudo yum install aspell-en
 
 sudo yum -y install texlive texlive-*.noarch
 
+https://www.tug.org/texlive/acquire-netinstall.html
+
 # hpc mcnp
 sub_mcnpx_2.7.0 -i single.assembly_7815.inp -w 02:15:00 -n16 -P iuc
-=======
-https://github.com/Valloric/YouCompleteMe/wiki/Building-Vim-from-source
-make distclean
-rm auto/config.cache
 
->>>>>>> b13607c9a6664d45d9fa5a6e5ace412d8d1514e3
-
-
+# centos
+https://stackoverflow.com/questions/28328775/virtualbox-mount-vboxsf-mounting-failed-with-the-error-no-such-device/29456128#29456128
+https://stackoverflow.com/questions/43492322/vagrant-was-unable-to-mount-virtualbox-shared-folders
+https://www.tecmint.com/install-virtualbox-guest-additions-in-centos-rhel-fedora/
