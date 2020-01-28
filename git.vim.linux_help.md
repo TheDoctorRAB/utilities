@@ -89,6 +89,8 @@ https://www.tug.org/texlive/acquire-netinstall.html
 sub_mcnpx_2.7.0 -i single.assembly_7815.inp -w 02:15:00 -n16 -P iuc
 
 # centos
-https://stackoverflow.com/questions/28328775/virtualbox-mount-vboxsf-mounting-failed-with-the-error-no-such-device/29456128#29456128
-https://stackoverflow.com/questions/43492322/vagrant-was-unable-to-mount-virtualbox-shared-folders
-https://www.tecmint.com/install-virtualbox-guest-additions-in-centos-rhel-fedora/
+https://stackoverflow.com/questions/28328775/virtualbox-mount-vboxsf-mounting-failed-with-the-error-no-such-device/29456128#29456128  
+https://stackoverflow.com/questions/43492322/vagrant-was-unable-to-mount-virtualbox-shared-folders  
+https://www.tecmint.com/install-virtualbox-guest-additions-in-centos-rhel-fedora/  
+wget http://ardownload.adobe.com/pub/adobe/reader/unix/9.x/9.5.5/enu/AdbeRdr9.5.5-1_i486linux_enu.rpm  
+sudo yum install AdbeRdr9.5.5-1_i486linux_enu.rpm libcanberra-gtk2.i686 adwaita-gtk2-theme.i686 PackageKit-gtk3-module.i686
