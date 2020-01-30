@@ -83,8 +83,11 @@ sudo yum install aspell-en
 
 sudo yum -y install texlive texlive-*.noarch
 
-https://www.tug.org/texlive/acquire-netinstall.html
+https://www.tug.org/texlive/acquire-netinstall.html  
+(have to install pdflatex next)
 
+sudo yum -y install texlive-collection-fontsrecommended texlive-times  
+for fonts
 # hpc mcnp
 sub_mcnpx_2.7.0 -i single.assembly_7815.inp -w 02:15:00 -n16 -P iuc
 
