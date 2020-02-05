@@ -14,10 +14,14 @@
 #
 import smtplib
 import numpy
+import email
 from sys import argv
-from email.MIMEMultipart import MIMEMultipart
-from email.MIMEText import MIMEText
-from email.MIMEImage import MIMEImage
+from email.mime.multipart import MIMEMultipart #python3
+from email.mime.text import MIMEText #python3
+from email.mime.image import MIMEImage #python3
+#from email.MIMEMultipart import MIMEMultipart #python2
+#from email.MIMEText import MIMEText #python2
+#from email.MIMEImage import MIMEImage #python2
 from email.mime.application import MIMEApplication
 script,email_list=argv #add a CSV file with email addresses (one on each line) as command line argument
 #
@@ -25,7 +29,7 @@ script,email_list=argv #add a CSV file with email addresses (one on each line) a
 #
 # email sender
 #
-sender='your.email@gmail.com'
+sender='username@gmail.com'
 #
 #######
 #
@@ -52,7 +56,7 @@ for line in email_list:
 #
 server=smtplib.SMTP('smtp.gmail.com',587)
 server.starttls()
-server.login(sender,'GET APP SPECIFIC PASSWORD')
+server.login(sender,'APP SPECIFIC PASSWORD')
 #
 #######
 #
@@ -61,19 +65,20 @@ server.login(sender,'GET APP SPECIFIC PASSWORD')
 for j in range(0,email_list_size): #been getting a 'connection unexpectedly closed' error around j=100
     receiver=email_list[j]
     message=MIMEMultipart()
-    message['From']=''
+    message['From']='Name'
     message['To']=receiver
     message['Subject']=''
     body='''
 '''
-    part=MIMEApplication(open('filename','rb').read())
-    part.add_header('Content-Disposition','attachment',filename='filename')
+    part=MIMEApplication(open('flyer.pdf','rb').read())
+    part.add_header('Content-Disposition','attachment',filename='flyer.pdf')
     message.attach(part)
     message.attach(MIMEText(body,'plain'))
     message_text=message.as_string()
 #
     server.sendmail(sender,receiver,message_text)
-    print j,receiver
+#   print j,receiver  #python2
+    print(j,receiver) #python3
 # end j
 server.quit()
 #
