@@ -55,6 +55,7 @@ $ echo 75wt/10wt/30cm/inp/ 75wt/30wt/30cm/inp/ 75wt/50wt/30cm/inp/ 75wt/70wt/30c
 mount shared folder 'home'
 sudo mount -t vboxsf -o uid=$UID,gid=$(id -g) home ~/home/
 
+rpmbuild --rebuild package.src.rpm
 # vim
 
 multiple find and replace  
