@@ -28,7 +28,7 @@ $ git diff --stat upstream/master
 $ git checkout other-branch -- ../path/ #while on destination branch  
 
 ### new password
-
+ 
 $ git push https://username@github.com/username/repo.git master  
 May be that the push has to be to master  
 Deleted directory and cloned again  
@@ -42,7 +42,7 @@ https://computingforgeeks.com/how-to-install-latest-version-of-git-git-2-x-on-ce
 https://serverfault.com/questions/709433/install-a-newer-version-of-git-on-centos-7
 
 # linux
-
+ 
 delete matching files in subdirectories  
 $ find . -name \*.out -type f -delete
 
@@ -68,7 +68,7 @@ reinstall
 https://github.com/Valloric/YouCompleteMe/wiki/Building-Vim-from-source
 make distclean
 rm auto/config.cache
-
+ 
 # latex
 
 install sty
@@ -90,7 +90,7 @@ https://www.tug.org/texlive/acquire-netinstall.html
 sudo yum -y install texlive-collection-fontsrecommended texlive-times  
 for fonts
 
-https://rpms.remirepo.net/rpmphp/zoom.php?rpm=latexdiff
+ https://rpms.remirepo.net/rpmphp/zoom.php?rpm=latexdiff
 # hpc mcnp
 sub_mcnpx_2.7.0 -i single.assembly_7815.inp -w 02:15:00 -n16 -P iuc
 
