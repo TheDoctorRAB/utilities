@@ -5,6 +5,7 @@ source ~/.vim_runtime/vimrcs/filetypes.vim
 source ~/.vim_runtime/vimrcs/plugins_config.vim
 source ~/.vim_runtime/vimrcs/extended.vim
 source ~/.vim_runtime/my_plugins/AutoSave.vim
+source ~/.vim_runtime/my_plugins/LanguageTool.vim
 source ~/.vim_runtime/my_plugins/latexlivepreview.vim
 source ~/.vim_runtime/vim-fugitive/plugin/fugitive.vim
 source ~/.vim_runtime/vim-fugitive/autoload/fugitive.vim
@@ -30,6 +31,9 @@ let g:Tex_FormatDependency_pdf='dvi,ps,pdf'
 let g:Tex_CompileRule_dvi = 'latex --interaction=nonstopmode $*'
 let g:Tex_CompileRule_ps = 'dvips -Ppdf -o $*.ps $*.dvi'
 let g:Tex_CompileRule_pdf = 'ps2pdf $*.ps'
+
+let g:languagetool_jar='$HOME/github/languagetool/languagetool-standalone/target/LanguageTool-5.0-SNAPSHOT/LanguageTool-5.0-SNAPSHOT/languagetool-commandline.jar'
+let g:languagetool_lang='en-US'
 
 set statusline=
 set statusline+=%{FugitiveStatusline()}
