@@ -23,7 +23,5 @@ alias cp='cp -i'
 alias vip='find . -name "*.inp" -exec vim {} +'
 alias spellchk='aspell --lang=en --mode=tex -c'
 alias sd='sudo yum -y install'
-alias shdwn='sudo shutdown'
-alias clx='rm -rf /tmp/vim-latex-live-preview-*'
 
-echo 'check git diff'
+# hpc passwd first half of cableone with the CAP and the numbersymbol at the end
