@@ -27,8 +27,12 @@ $ git diff --stat upstream/master
 
 $ git checkout other-branch -- ../path/ #while on destination branch  
 
+$ git branch target origin/target  
+$ git checkout target
+
 ### new password
- 
+
+
 $ git push https://username@github.com/username/repo.git master  
 May be that the push has to be to master  
 Deleted directory and cloned again  
@@ -38,7 +42,8 @@ http://dont-be-afraid-to-commit.readthedocs.io/en/latest/git/commandlinegit.html
 
 https://blacksaildivision.com/git-latest-version-centos
 
-https://computingforgeeks.com/how-to-install-latest-version-of-git-git-2-x-on-centos-7/
+https://computingforgeeks.com/how-to-install-latest-version-of-git-git-2-x-on-centos-7/  
+
 https://serverfault.com/questions/709433/install-a-newer-version-of-git-on-centos-7
 
 # linux
@@ -58,6 +63,7 @@ sudo mount -t vboxsf -o uid=$UID,gid=$(id -g) home ~/home/
 rpmbuild --rebuild package.src.rpm
 # vim
 
+
 multiple find and replace  
 %s/103    5 -0.001205/103    7 -0.0001785/ | %s/110    5 -0.001205/110    7 -0.0001785/ | %s/NPS    500000/NPS    200000/
 
@@ -65,8 +71,8 @@ global find and replace with confirmation
 %s/find this string/replace with this string/gc
 
 reinstall  
-https://github.com/Valloric/YouCompleteMe/wiki/Building-Vim-from-source
-make distclean
+https://github.com/Valloric/YouCompleteMe/wiki/Building-Vim-from-source  
+make distclean  
 rm auto/config.cache
  
 # latex
@@ -95,6 +101,7 @@ for fonts
 sub_mcnpx_2.7.0 -i single.assembly_7815.inp -w 02:15:00 -n16 -P iuc
 
 # centos
+
 https://stackoverflow.com/questions/28328775/virtualbox-mount-vboxsf-mounting-failed-with-the-error-no-such-device/29456128#29456128  
 https://stackoverflow.com/questions/43492322/vagrant-was-unable-to-mount-virtualbox-shared-folders  
 https://www.tecmint.com/install-virtualbox-guest-additions-in-centos-rhel-fedora/  
