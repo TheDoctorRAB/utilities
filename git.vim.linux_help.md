@@ -107,3 +107,18 @@ https://stackoverflow.com/questions/43492322/vagrant-was-unable-to-mount-virtual
 https://www.tecmint.com/install-virtualbox-guest-additions-in-centos-rhel-fedora/  
 wget http://ardownload.adobe.com/pub/adobe/reader/unix/9.x/9.5.5/enu/AdbeRdr9.5.5-1_i486linux_enu.rpm  
 sudo yum install AdbeRdr9.5.5-1_i486linux_enu.rpm libcanberra-gtk2.i686 adwaita-gtk2-theme.i686 PackageKit-gtk3-module.i686
+
+# pyne
+install from source
+
+install numpy, etc., with pip  
+sd python36-devel.x86_64  
+sd cmake  
+sd hdf5-1.10.5-4.el8.x86_64  
+sd hdf5-devel  
+sd dpkg  
+sudo dnf config-manager --set-enabled PowerTools  
+sd blas-devel  
+sd lapack-devel  
+pip3 install cython  
+
