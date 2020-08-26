@@ -121,4 +121,5 @@ sudo dnf config-manager --set-enabled PowerTools
 sd blas-devel  
 sd lapack-devel  
 pip3 install cython  
+pip3 install tables
 
