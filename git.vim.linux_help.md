@@ -112,6 +112,8 @@ sudo yum install AdbeRdr9.5.5-1_i486linux_enu.rpm libcanberra-gtk2.i686 adwaita-
 install from source
 
 install numpy, etc., with pip  
+pip3 install --user numpy scipy matplotlib ipython jupyter pandas sympy nose
+
 sd python36-devel.x86_64  
 sd cmake  
 sd hdf5-1.10.5-4.el8.x86_64  
