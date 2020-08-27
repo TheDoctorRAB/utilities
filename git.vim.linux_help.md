@@ -116,6 +116,7 @@ pip3 install --user numpy scipy matplotlib ipython jupyter pandas sympy nose
 
 sd python36-devel.x86_64  
 sd cmake  
+sudo dnf config-manager --set-enabled PowerTools  
 sd hdf5-1.10.5-4.el8.x86_64  
 sd hdf5-devel  
 sd dpkg  
