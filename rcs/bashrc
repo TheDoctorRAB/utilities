@@ -27,5 +27,6 @@ alias shdwn='sudo shutdown'
 alias clx='rm -rf /tmp/vim-latex-live-preview-*'
 alias tp='trash-put'
 alias ff='firefox &'
+alias sapt='sudo apt install'
 
 # hpc passwd is google with CAPS and the numbersymbol at the end
