@@ -12,6 +12,7 @@ source /usr/share/git-core/contrib/completion/git-prompt.sh
 source /usr/share/git-core/contrib/completion/git-completion.bash
 
 shopt -s extglob
+#lsb_release -a
 
 export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_SHOWUNTRACKEDFILES=true
@@ -31,5 +32,10 @@ alias clx='rm -rf /tmp/vim-latex-live-preview-*'
 alias tp='trash-put'
 alias ff='firefox &'
 alias sapt='sudo apt install'
+alias google-drive='google-drive-ocamlfuse GoogleDrive/'
 
-# hpc passwd is google with CAPS and the numbersymbol at the end
+# hpc - annie is a fussy eater af with the number and symbol at the end
+# fastlane - google with capital S and number and symbol
+# pams - cableone with the symbol and caps
+# arpa-e - hpc but gmail login
+# fidelity - rangeloborrelli
