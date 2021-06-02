@@ -30,6 +30,8 @@ $ git checkout other-branch -- ../path/ #while on destination branch
 $ git branch target origin/target  
 $ git checkout target
 
+$ git remote set-url origin git@github.com:username/your-repository.git
+
 ### new password
 
 
