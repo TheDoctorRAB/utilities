@@ -63,6 +63,11 @@ mount shared folder 'home'
 sudo mount -t vboxsf -o uid=$UID,gid=$(id -g) home ~/home/
 
 rpmbuild --rebuild package.src.rpm
+
+lsblk - device listing
+
+/run/user/1001/gvfs/
+
 # vim
 
 
@@ -76,7 +81,13 @@ reinstall
 https://github.com/Valloric/YouCompleteMe/wiki/Building-Vim-from-source  
 make distclean  
 rm auto/config.cache
- 
+
+https://vim.fandom.com/wiki/Moving_around
+
+https://vim.rtorr.com/
+
+https://vim.fandom.com/wiki/Macros
+
 # latex
 
 install sty
