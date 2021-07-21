@@ -32,8 +32,13 @@ $ git checkout target
 
 $ git remote set-url origin git@github.com:username/your-repository.git
 
-### new password
+$ git clone git@github.com:username/your-repository.git
 
+### ssh
+
+https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh
+
+### new password
 
 $ git push https://username@github.com/username/repo.git master  
 May be that the push has to be to master  
@@ -67,6 +72,12 @@ rpmbuild --rebuild package.src.rpm
 lsblk - device listing
 
 /run/user/1001/gvfs/
+
+rsync -ah --progress target/ destination/
+
+lsb_release -a 
+
+sudo do-release-upgrade -d
 
 # vim
 
