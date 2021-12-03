@@ -54,7 +54,7 @@ https://computingforgeeks.com/how-to-install-latest-version-of-git-git-2-x-on-ce
 https://serverfault.com/questions/709433/install-a-newer-version-of-git-on-centos-7
 
 # linux
- 
+
 delete matching files in subdirectories  
 $ find . -name \*.out -type f -delete
 
@@ -78,6 +78,13 @@ rsync -ah --progress target/ destination/
 lsb_release -a 
 
 sudo do-release-upgrade -d
+
+### bios 
+https://itectec.com/ubuntu/ubuntu-how-to-update-the-computer-bios-firmware-without-using-windows/
+
+sudo dmidecode -s bios-version  
+
+extensions are wiped on upgrade but just hae to turn them back on
 
 # vim
 
