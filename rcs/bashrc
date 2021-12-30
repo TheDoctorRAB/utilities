@@ -17,16 +17,17 @@ shopt -s extglob
 export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_SHOWUNTRACKEDFILES=true
 
-PS1='[\d \A \w$(declare -F __git_ps1 &>/dev/null && __git_ps1 " (%s)") ]$ '
+# PS1='[\d \A \w$(declare -F __git_ps1 &>/dev/null && __git_ps1 " (%s)") ]$ '
+PS1='[\D{%a %Y.%m.%d} \A \w$(declare -F __git_ps1 &>/dev/null && __git_ps1 " (%s)") ]$ '
 
 # User specific aliases and functions
 alias ll='ls -Flag'
 alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
+alias gcp='gcp -rv'
 alias vip='find . -name "*.inp" -exec vim {} +'
 alias spellchk='aspell --lang=en --mode=tex -c'
-alias sd='sudo yum -y install'
 alias shdwn='sudo shutdown'
 alias clx='rm -rf /tmp/vim-latex-live-preview-*'
 alias tp='trash-put'
@@ -34,8 +35,18 @@ alias ff='firefox &'
 alias sapt='sudo apt install'
 alias google-drive='google-drive-ocamlfuse GoogleDrive/'
 
-# hpc - annie is a fussy eater af with the number and symbol at the end
-# fastlane - google with capital S and number and symbol
-# pams - cableone with the symbol and caps
-# arpa-e - hpc but gmail login
-# fidelity - rangeloborrelli
+################################################################################
+#
+# open sound and volume control panels before plugging HDMI if it has sound enabled
+#
+#####
+#####
+# vim macros
+# k - deletes \sk{---}
+# p - deletes \edit{ and then jumps to the next }
+# g - comments out line in tex file with % and moves to line below
+#####
+#
+# DO NOT PUT SUDO COMMANDS IN BASHRC
+#
+################################################################################

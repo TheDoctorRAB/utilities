@@ -7,6 +7,7 @@ source ~/.vim_runtime/vimrcs/extended.vim
 source ~/.vim_runtime/my_plugins/AutoSave.vim
 source ~/.vim_runtime/my_plugins/LanguageTool.vim
 source ~/.vim_runtime/my_plugins/latexlivepreview.vim
+source ~/.vim_runtime/my_plugins/undotree.vim
 source ~/.vim_runtime/vim-fugitive/plugin/fugitive.vim
 source ~/.vim_runtime/vim-fugitive/autoload/fugitive.vim
 source ~/.vim_runtime/vim-fugitive/ftdetect/fugitive.vim
@@ -17,14 +18,14 @@ catch
 endtry
 
 set number
+set tw=2500
 let g:auto_save = 1
 let g:auto_save_in_insert_mode = 1
-set statusline=%!getcwd()
 
 filetype plugin on
 let g:tex_flavor='latex'
 
-let g:livepreview_previewer='okular'
+let g:livepreview_previewer='evince'
 let g:livepreview_engine='pdflatex'
 
 let g:Tex_FormatDependency_pdf='dvi,ps,pdf'
@@ -36,6 +37,7 @@ let g:languagetool_jar='$HOME/github/languagetool/languagetool-standalone/target
 let g:languagetool_lang='en-US'
 
 set statusline=
+set statusline=%!getcwd()
 set statusline+=%{FugitiveStatusline()}
 set statusline+=\ %f
 
@@ -43,3 +45,6 @@ colorscheme gruvbox
 
 set cursorline
 set cursorcolumn
+
+let @k='v2w%x' |" highlights \sk{---} and removes
+let @p='3dwf}' |" deletes \edit{ and jumps to next }
