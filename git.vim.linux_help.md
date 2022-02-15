@@ -79,6 +79,8 @@ lsb_release -a
 
 sudo do-release-upgrade -d
 
+https://www.how2shout.com/linux/how-to-install-zotero-on-ubuntu-22-04-or-20-04-lts/
+
 ### bios 
 https://itectec.com/ubuntu/ubuntu-how-to-update-the-computer-bios-firmware-without-using-windows/
 
