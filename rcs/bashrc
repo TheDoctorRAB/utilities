@@ -40,12 +40,20 @@ alias google-drive='google-drive-ocamlfuse GoogleDrive/'
 # open sound and volume control panels before plugging HDMI if it has sound enabled
 #
 #####
-#####
 # vim macros
-# k - deletes \sk{---}
-# p - deletes \edit{ and then jumps to the next }
-# g - comments out line in tex file with % and moves to line below
+# k - deletes \sk{---} - v2w%x
+# p - deletes \edit{ and then jumps to the next } - 3dwf}
+# g - comments out line in tex file with % and moves to line below - i%-esc-j
+# s - adds \sk{ - i\sk{-esc-
+# e - adds \edit{} - i\edit{-esc-
+# a - bibtex @article fields
+# m - bibtex @misc fields
+# n - note = {{\\}}, - 
 #####
+#
+# killall -SIGQUIT gnome-shell to reset the desktop
+#
+################################################################################
 #
 # DO NOT PUT SUDO COMMANDS IN BASHRC
 #
