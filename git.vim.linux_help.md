@@ -85,6 +85,7 @@ https://www.youtube.com/watch?v=vfpszgs6-kE
 
 https://linuxconfig.org/how-to-upgrade-ubuntu-to-22-04-lts-jammy-jellyfish
 
+https://linuxize.com/post/how-to-upgrade-to-ubuntu-22-04/#:~:text=Ubuntu%2022.04%20LTS%20(Jammy%20Jellyfish)%20was%20released%20on%20April%2021,Python%2C%20Ruby%2C%20and%20PHP.
 ### bios 
 https://itectec.com/ubuntu/ubuntu-how-to-update-the-computer-bios-firmware-without-using-windows/
 
