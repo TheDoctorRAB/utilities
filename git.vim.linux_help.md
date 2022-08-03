@@ -138,6 +138,11 @@ sudo yum -y install texlive-collection-fontsrecommended texlive-times
 for fonts
 
  https://rpms.remirepo.net/rpmphp/zoom.php?rpm=latexdiff
+
+sudo add-apt-repository universe
+sudo apt update
+sudo apt install texlive-live
+
 # hpc mcnp
 sub_mcnpx_2.7.0 -i single.assembly_7815.inp -w 02:15:00 -n16 -P iuc
 
