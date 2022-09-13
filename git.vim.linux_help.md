@@ -96,8 +96,9 @@ extensions are wiped on upgrade but just hae to turn them back on
 https://www.cyberciti.biz/faq/upgrade-ubuntu-20-04-lts-to-22-04-lts/
 https://askubuntu.com/questions/1403616/22-04-lts-sudo-do-release-upgrade-does-not-work
 
-# vim
+sudo aptitude full-upgrade
 
+# vim
 
 multiple find and replace  
 %s/103    5 -0.001205/103    7 -0.0001785/ | %s/110    5 -0.001205/110    7 -0.0001785/ | %s/NPS    500000/NPS    200000/
