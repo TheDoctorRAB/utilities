@@ -173,3 +173,5 @@ sd lapack-devel
 pip3 install cython  
 pip3 install tables
 
+# other
+https://geekflare.com/change-user-agent-in-browser/
