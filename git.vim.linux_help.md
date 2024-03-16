@@ -79,6 +79,8 @@ lsb_release -a
 
 sudo do-release-upgrade -d
 
+grep -Rnw 'references/' -e 'mur20a'
+
 https://www.how2shout.com/linux/how-to-install-zotero-on-ubuntu-22-04-or-20-04-lts/
 
 https://www.youtube.com/watch?v=vfpszgs6-kE
