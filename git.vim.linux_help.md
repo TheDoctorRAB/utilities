@@ -118,6 +118,8 @@ https://vim.rtorr.com/
 
 https://vim.fandom.com/wiki/Macros
 
+https://itsfoss.com/install-latest-vim-ubuntu/
+
 # latex
 
 install sty
