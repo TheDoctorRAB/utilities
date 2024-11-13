@@ -1,4 +1,4 @@
-# git
+: git
 
 make branch first  
 only make branch from master  
