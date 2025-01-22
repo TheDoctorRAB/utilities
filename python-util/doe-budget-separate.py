@@ -29,8 +29,8 @@ from spire.xls.common import *
 #
 # does not like hyphens in object definition
 #
-draftBudget = Workbook() #google sheet draft budget
-doeBudget = Workbook()   #doe required format
+draftBudget = Workbook() #source xlsx
+doeBudget = Workbook()   #destination xlsx
 #
 #######
 #
@@ -38,34 +38,53 @@ doeBudget = Workbook()   #doe required format
 #
 ####### load excel worksheets
 #
-doeBudget.LoadFromFile('doe-draft.xlsx')
+draftBudget.LoadFromFile('doe-draft.xlsx')
 #
 #######
 #
 #
 #
-####### load worksheets
+####### move worksheets to new file
 #
-# first worksheet = 0 just like array
+# blank Sheet1, Sheet2, Sheet3 created
+# can only remove first two sheets without deleting some of the moved sheets even on reload
 #
-doe1AB = doeBudget.Worksheets[5]
-doe1CE = doeBudget.Worksheets[6]
-doe1FK = doeBudget.Worksheets[7]
-doe2AB = doeBudget.Worksheets[8]
-doe2CE = doeBudget.Worksheets[9]
-doe2FK = doeBudget.Worksheets[10]
-doe3AB = doeBudget.Worksheets[11]
-doe3CE = doeBudget.Worksheets[12]
-doe3FK = doeBudget.Worksheets[13]
-doe3FK = doeBudget.Worksheets[13]
-doeCumulative = doeBudget.Worksheets[14]
+doeBudget.Worksheets.RemoveAt(0)
+doeBudget.Worksheets.RemoveAt(1)
+#
+doeBudget.Worksheets.Add(draftBudget.Worksheets[5].Name).CopyFrom(draftBudget.Worksheets[5])
+doeBudget.Worksheets.Add(draftBudget.Worksheets[6].Name).CopyFrom(draftBudget.Worksheets[6])
+doeBudget.Worksheets.Add(draftBudget.Worksheets[7].Name).CopyFrom(draftBudget.Worksheets[7])
+doeBudget.Worksheets.Add(draftBudget.Worksheets[8].Name).CopyFrom(draftBudget.Worksheets[8])
+doeBudget.Worksheets.Add(draftBudget.Worksheets[9].Name).CopyFrom(draftBudget.Worksheets[9])
+doeBudget.Worksheets.Add(draftBudget.Worksheets[10].Name).CopyFrom(draftBudget.Worksheets[10])
+doeBudget.Worksheets.Add(draftBudget.Worksheets[11].Name).CopyFrom(draftBudget.Worksheets[11])
+doeBudget.Worksheets.Add(draftBudget.Worksheets[12].Name).CopyFrom(draftBudget.Worksheets[12])
+doeBudget.Worksheets.Add(draftBudget.Worksheets[13].Name).CopyFrom(draftBudget.Worksheets[13])
+doeBudget.Worksheets.Add(draftBudget.Worksheets[14].Name).CopyFrom(draftBudget.Worksheets[14])
 #
 #######
 #
 #
 #
-###### save
+####### save
 #
 doeBudget.SaveToFile('doe-format.xlsx')
 #
-######
+#######
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
