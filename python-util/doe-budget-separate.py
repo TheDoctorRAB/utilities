@@ -62,6 +62,15 @@ doeBudget.Worksheets.Add(draftBudget.Worksheets[11].Name).CopyFrom(draftBudget.W
 doeBudget.Worksheets.Add(draftBudget.Worksheets[12].Name).CopyFrom(draftBudget.Worksheets[12])
 doeBudget.Worksheets.Add(draftBudget.Worksheets[13].Name).CopyFrom(draftBudget.Worksheets[13])
 doeBudget.Worksheets.Add(draftBudget.Worksheets[14].Name).CopyFrom(draftBudget.Worksheets[14])
+###
+#
+# below adds for a four year budget
+# comment out and just use above for a three year budget
+#
+###
+doeBudget.Worksheets.Add(draftBudget.Worksheets[15].Name).CopyFrom(draftBudget.Worksheets[15])
+doeBudget.Worksheets.Add(draftBudget.Worksheets[16].Name).CopyFrom(draftBudget.Worksheets[16])
+doeBudget.Worksheets.Add(draftBudget.Worksheets[17].Name).CopyFrom(draftBudget.Worksheets[17])
 #
 #######
 #
@@ -72,19 +81,3 @@ doeBudget.Worksheets.Add(draftBudget.Worksheets[14].Name).CopyFrom(draftBudget.W
 doeBudget.SaveToFile('doe-format.xlsx')
 #
 #######
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
