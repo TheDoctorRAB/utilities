@@ -38,7 +38,7 @@ doeBudget = Workbook()   #destination xlsx
 #
 ####### load excel worksheets
 #
-draftBudget.LoadFromFile('doe-draft.xlsx')
+draftBudget.LoadFromFile('doe.xls')
 #
 #######
 #
@@ -78,6 +78,6 @@ doeBudget.Worksheets.Add(draftBudget.Worksheets[17].Name).CopyFrom(draftBudget.W
 #
 ####### save
 #
-doeBudget.SaveToFile('doe-format.xlsx')
+doeBudget.SaveToFile('university-of-idaho-subaward-budget-revitalization-digital-twin.xlsx')
 #
 #######
