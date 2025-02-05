@@ -91,6 +91,9 @@ https://linuxize.com/post/how-to-upgrade-to-ubuntu-22-04/#:~:text=Ubuntu%2022.04
 
 https://unix.stackexchange.com/questions/675099/how-to-connect-to-wifi-with-nmcli
 
+panel date format  
+dconf write /org/gnome/shell/extensions/panel-date-format/format "'\%k.\%M   \%A  \%Y.\%m.\%d'" 
+
 ### bios 
 https://askubuntu.com/questions/1261876/how-to-update-the-computer-bios-firmware-without-using-windows  
 sudo dmidecode -s bios-version  
