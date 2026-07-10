@@ -53,7 +53,7 @@ for line in email_list:
 #
 server=smtplib.SMTP('smtp.gmail.com',587)
 server.starttls()
-server.login(sender,'flqcvwlznmwgjhzh')
+server.login(sender,'')
 #
 #######
 #
