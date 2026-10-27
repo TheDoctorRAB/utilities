@@ -75,7 +75,24 @@ lsblk - device listing
 
 rsync -ah --progress target/ destination/
 
-lsb_release -a 
+lsb_release -a   
+check if /etc/lsb-release matches
+
+change /usr/lib/os-release  
+PRETTY_NAME="Ubuntu 24.04.5 LTS"  
+NAME="Ubuntu"  
+VERSION_ID="24.04"  
+VERSION="24.04.5 LTS (Noble Numbat)"  
+VERSION_CODENAME=noble  
+ID=ubuntu  
+ID_LIKE=debian  
+HOME_URL="https://www.ubuntu.com/"  
+SUPPORT_URL="https://help.ubuntu.com/"  
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"  
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"  
+UBUNTU_CODENAME=noble  
+
+Compare with /etc/issue
 
 sudo do-release-upgrade -d
 
@@ -128,6 +145,7 @@ https://itsfoss.com/install-latest-vim-ubuntu/
 
 # latex
 
+install with tarball
 install sty
 $sudo yum -y install 'tex(multirow.sty)'
 
@@ -144,14 +162,8 @@ sudo yum -y install texlive texlive-*.noarch
 https://www.tug.org/texlive/acquire-netinstall.html  
 (have to install pdflatex next)
 
-sudo yum -y install texlive-collection-fontsrecommended texlive-times  
-for fonts
+https://rpms.remirepo.net/rpmphp/zoom.php?rpm=latexdiff
 
- https://rpms.remirepo.net/rpmphp/zoom.php?rpm=latexdiff
-
-sudo add-apt-repository universe
-sudo apt update
-sudo apt install texlive-live
 
 # hpc mcnp
 sub_mcnpx_2.7.0 -i single.assembly_7815.inp -w 02:15:00 -n16 -P iuc
